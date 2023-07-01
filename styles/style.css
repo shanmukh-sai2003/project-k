@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@600&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body {
+    background-color: black;
+    background-image: url("../images/background.jpeg");
+    background-blend-mode: lighten;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.main {
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+}
+
+.main p {
+    font-family: 'Mulish', sans-serif;
+}
+
+.main h1 {
+    font-family: 'Jost', sans-serif;
+}
+
+.menu {
+    margin-left: 30px;
+    padding: 10px 25px;
+    cursor: pointer;
+    border-radius: 28px;
+    font-family: 'Jost', sans-serif;
+    font-size: 1.2rem;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    border-style: none;
+    box-sizing: border-box;
+    border: 2px solid white;
+}
+
+.menu:hover {
+    background: #F6F9FE;
+    color: #174ea6;
+}
+
+.menu:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+}
+
+.menuClicked {
+    color: #174ea6;
+    border: 2px solid #4285f4;
+}
+
+.menuBox {
+    padding: 20px 20px;
+    background-color: white;
+    border-radius: 16px;
+    position: absolute;
+    bottom: 60px;
+    left: 20px;
+    text-align: center;
+    display: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+}
+
+.menuBoxToggle {
+    display: inline-block;
+}
+
+.menuBox button {
+    display: block;
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin: 10px;
+    font-family: 'Jost', sans-serif;
+    border: none;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    background-color: white;
+}
+
+.menuBox button:hover {
+    background: #F6F9FE;
+    color: #174ea6;
+}
+
+.menuBox button:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+}
+
+.menuBox button:focus {
+    outline: none;
+    border: 2px solid #4285f4;
+    color: #174ea6;
+}
